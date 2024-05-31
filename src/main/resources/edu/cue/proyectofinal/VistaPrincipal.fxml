@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.media.MediaView?>
+<?import javafx.scene.image.Image?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.cue.proyectofinal.controllers.TestController2" prefHeight="800.0" prefWidth="1200.0" style="-fx-background-color: #d1d5da;">
+    <!-- Encabezado -->
+    <HBox layoutY="0.0" prefHeight="100.0" prefWidth="1200.0" style="-fx-background-color: #3d3d3d;">
+        <Button fx:id="menuButton" style="-fx-background-color: transparent; -fx-padding: 20;" layoutX="200.0" layoutY="50.0">
+            <graphic>
+                <VBox spacing="4">
+                    <Rectangle width="30" height="4" fill="white" />
+                    <Rectangle width="30" height="4" fill="white" />
+                    <Rectangle width="30" height="4" fill="white" />
+                </VBox>
+            </graphic>
+        </Button>
+        <VBox>
+            <Label fx:id="label" text="GAMEHAVEN" style="-fx-font-size: 50px; -fx-text-fill: white;" layoutX="100" layoutY="100">
+                <font>
+                    <Font name="Open Sans" size="50.0" />
+                </font>
+            </Label>
+        </VBox>
+    </HBox>
+
+    <!-- Contenido Principal -->
+    <HBox layoutY="100.0" prefHeight="700.0" prefWidth="1200.0">
+        <!-- Menú Principal -->
+        <VBox prefWidth="300.0" spacing="20" style="-fx-background-color: #6d6d6d;" alignment="TOP_LEFT" padding="20">
+            <Button mnemonicParsing="false" text="Tienda" style="-fx-font-size: 38px; -fx-font-family: 'Open Sans'; -fx-text-fill: white; -fx-background-color: transparent;">
+                <graphic>
+                    <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@/edu/cue/proyectofinal/images/Tienda.png" />
+                        </image>
+                    </ImageView>
+                </graphic>
+            </Button>
+            <Button mnemonicParsing="false" text="Biblioteca" style="-fx-font-size: 38px; -fx-font-family: 'Open Sans'; -fx-text-fill: white; -fx-background-color: transparent;">
+                <graphic>
+                    <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@/edu/cue/proyectofinal/images/Biblioteca.png" />
+                        </image>
+                    </ImageView>
+                </graphic>
+            </Button>
+            <Button mnemonicParsing="false" text="Carrito" style="-fx-font-size: 38px; -fx-font-family: 'Open Sans'; -fx-text-fill: white; -fx-background-color: transparent;">
+                <graphic>
+                    <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                        <image>
+                            <Image url="@/edu/cue/proyectofinal/images/Carrito.png" />
+                        </image>
+                    </ImageView>
+                </graphic>
+            </Button>
+            <Label text="Jugados recientemente" style="-fx-font-size: 21px; -fx-font-family: 'Open Sans'; -fx-text-fill: white;" />
+            <VBox spacing="10">
+                <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@/edu/cue/proyectofinal/images/Game1.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@/edu/cue/proyectofinal/images/Game2.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@/edu/cue/proyectofinal/images/Game3.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@/edu/cue/proyectofinal/images/Game4.png" />
+                    </image>
+                </ImageView>
+            </VBox>
+        </VBox>
+
+        <!-- Contenido Derecho -->
+        <VBox prefWidth="900.0" spacing="20" layoutX="300.0" layoutY="0.0" style="-fx-background-color: #2c2c2c; -fx-padding: 20;">
+            <Label text="EN DESCUENTO ESTA SEMANA" style="-fx-font-size: 40.5px; -fx-font-family: 'Open Sans'; -fx-text-fill: white;" />
+            <MediaView fx:id="mediaView" fitHeight="400.0" fitWidth="600.0" />
+            <Label text="Assassin's Creed Unity" style="-fx-font-size: 20px; -fx-font-family: 'Open Sans'; -fx-text-fill: white;" />
+            <HBox spacing="20">
+                <Button text="Compra ahora" style="-fx-font-size: 26.7px; -fx-font-family: 'Open Sans'; -fx-text-fill: white; -fx-background-radius: 30; -fx-background-color: #ff0000;" />
+                <VBox>
+                    <Label text="COP 159.000" style="-fx-font-size: 20px; -fx-font-family: 'Open Sans'; -fx-text-fill: white;" />
+                    <Label text="COP 203.000" style="-fx-font-size: 20px; -fx-font-family: 'Open Sans'; -fx-text-fill: white; -fx-strikethrough: true;" />
+                </VBox>
+            </HBox>
+        </VBox>
+    </HBox>
+</AnchorPane>
